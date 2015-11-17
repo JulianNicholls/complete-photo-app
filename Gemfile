@@ -37,3 +37,7 @@ group :production do
   gem 'pg'
   gem 'rails_12factor'
 end
+
+gem 'devise'
+gem 'twitter-bootstrap-rails'
+gem 'devise-bootstrap-views'
