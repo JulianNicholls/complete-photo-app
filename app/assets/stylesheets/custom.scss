@@ -1,8 +1,3 @@
-.jumbotron h1 {
-    letter-spacing: -1px;
-    margin-bottom: 30px;
-}
-
 footer {
     margin-top: 20px;
     color: #777;
@@ -72,4 +67,42 @@ footer {
 
 .btn-primary:visited, .btn-danger:visited {
     color: #fff;
+}
+
+.features {
+    ul {
+        margin-left: 0;
+        padding-left: 15px;
+    }
+}
+
+.jumbotron {
+    text-align: center;
+    background-image: asset-url('street-1200.png');
+    background-size: cover;
+    color: #fff;
+    font-family: 'Helvetica Neue' !important;
+    font-stretch: expanded;
+    padding-top: 35px;
+    padding-bottom: 35px;
+    margin-left: 15px;
+    margin-right: 15px;
+    text-shadow: -1px 0 #555, 0 1px #555, 1px 0 #555, 0 -1px #555;
+    /*
+    h2 {
+    font-size: 35px !important;
+        .lead {
+            font-family: 'Helvetica Neue' !important;
+            font-size: 30px !important;
+        }
+    } */
+}
+
+.no-left-padding {
+    padding-left: 0 !important;
+}
+
+.listing {
+    list-style: none;
+    padding-left: 0;
 }

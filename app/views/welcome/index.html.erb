@@ -1,8 +1,42 @@
-<div class="jumbotron">
-  <h1 class="text-center">Complete photo app</h1>
-  <p class="lead text-center">Feel free to sign up.</p>
-  <p>Don't forget that you'll have to use a real email address
-  because a confirmation email will need to be sent to you.</p>
-
-  <%= link_to 'Sign up', new_user_registration_path, class: 'btn btn-large btn-primary' %>
-</div>
+<% if current_user %>
+  <h3>Welcome: <%= current_user.email %></h3>
+<% else %>
+  <div class="jumbotron">
+    <h2>Welcome to the Complete Photo App</h2>
+    <p class="lead">You'll love managing your photos with our application. Sign up today!</p>
+  </div>
+  <div class="row">
+    <div class="plans clearfix">
+      <div class="col-lg-3 col-lg-offset-2 plan">
+        <h2>Premium Plan</h2>
+        <div class="features">
+          <ul>
+            <li>Unlimited Image Uploads</li>
+            <li>Responsive design</li>
+            <li>Access anywhere</li>
+            <li>10 project limit</li>
+          </ul>
+        </div>
+        <p>
+          <div class='pull-right price'>Price: £10</div>
+          <%= link_to 'Sign Up', new_user_registration_path, class: 'btn btn-primary sign-up pull-left' %>
+        </p>
+      </div>
+      <div class="col-lg-3 col-lg-offset-1 plan">
+        <h2>Amaze Plan</h2>
+        <div class="features">
+          <ul>
+            <li>Unlimited Image Uploads</li>
+            <li>Responsive design</li>
+            <li>Access anywhere</li>
+            <li class='extra'>Unlimited projects</li>
+          </ul>
+        </div>
+        <p>
+          <div class='pull-right price'>Price: £20</div>
+          <%= link_to 'Sign Up', new_user_registration_path, class: 'btn btn-primary sign-up pull-left' %>
+        </p>
+      </div>
+    </div>
+  </div>
+<% end %>
