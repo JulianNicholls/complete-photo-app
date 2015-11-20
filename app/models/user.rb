@@ -1,3 +1,6 @@
+# Model of User:
+#   Requires email confirmation
+#   Has a single associated payment
 class User < ActiveRecord::Base
   # Include default devise modules. Others available are:
   # :lockable, :timeoutable and :omniauthable
