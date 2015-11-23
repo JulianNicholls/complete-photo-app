@@ -2,6 +2,15 @@
   Stripe.setPublishableKey('<%= ENV["STRIPE_TEST_PUBLISHABLE_KEY"] %>');
 </script>
 
+<p><small>
+  Don't forget you need to use a real email address to receive the confirmation email.
+</small></p>
+
+<p><small>
+  Use one of the test credit card numbers from the Stripe website, not a real one.
+  It wouldn't actually be charged or stored, but there's no reason to tempt fate!
+</small></p>
+
 <%= bootstrap_devise_error_messages! %>
 <div class="panel panel-default">
   <div class="panel-heading">
